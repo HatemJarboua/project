@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "projectType": "Développement Web",
+        "estimatedWorkload": "Estimée entre 120 et 130 heures",
+        "status": "Disponible",
+        "skills": "Compétences requises"
+    },
+    {
+        "id": 2,
+        "projectType": "Réseau",
+        "estimatedWorkload": "Estimée entre 90 et 95 heures",
+        "status": "Disponible",
+        "skills": "Compétences requises"
+    },
+    {
+        "id": 3,
+        "projectType": "Technologie Drone",
+        "estimatedWorkload": "Estimée entre 150 et 160 heures",
+        "status": "Disponible",
+        "skills": "Compétences requises"
+    },
+    {
+        "id": 4,
+        "projectType": "Intelligence Artificielle",
+        "estimatedWorkload": "Estimée entre 200 et 210 heures",
+        "status": "Disponible",
+        "skills": "Compétences requises"
+    },
+    {
+        "id": 5,
+        "projectType": "Développement d'Application Mobile",
+        "estimatedWorkload": "Estimée entre 170 et 180 heures",
+        "status": "Disponible",
+        "skills": "Compétences requises"
+    },
+    {
+        "id": 6,
+        "projectType": "Sécurité Informatique",
+        "estimatedWorkload": "Estimée entre 110 et 115 heures",
+        "status": "Disponible",
+        "skills": "Compétences requises"
+    },
+    {
+        "id": 7,
+        "projectType": "Développement de Jeux",
+        "estimatedWorkload": "Estimée entre 220 et 230 heures",
+        "status": "Disponible",
+        "skills": "Compétences requises"
+    },
+    {
+        "id": 8,
+        "projectType": "Big Data",
+        "estimatedWorkload": "Estimée entre 180 et 190 heures",
+        "status": "Disponible",
+        "skills": "Compétences requises"
+    },
+    {
+        "id": 9,
+        "projectType": "Blockchain",
+        "estimatedWorkload": "Estimée entre 250 et 260 heures",
+        "status": "Disponible",
+        "skills": "Compétences requises"
+    }
+]

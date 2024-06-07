@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo-db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: nermine2024
+      MONGO_INITDB_ROOT_PASSWORD: pfa2024
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - my-network
+  backend:
+    build: 
+      context: ./projects-portal-server
+      dockerfile: Dockerfile
+    container_name: backend
+    environment:
+      - PORT=3000
+      - DB_USER=nermine2024
+      - DB_PASSWORD=pfa2024
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+  
+    networks:
+      - my-network
+    volumes:
+      
+      - ./firebase:/usr/app/firebase:ro
+      
+  
+  frontend:
+    image:  front
+    container_name: frontend
+    build: 
+      context: ./projects-portal-client
+      dockerfile: Dockerfile
+    
+    ports:
+      - 8089:80
+     
+    
+networks:
+  my-network:
+    driver: bridge
+
+
+volumes:
+  mongo-data:
